@@ -45,7 +45,7 @@ header {
   background: #403F3F;
   box-shadow: rgba(19, 20, 20, 0.60) 0 0 .2rem .05rem;
 }
-/* .hero {
+/* #hero {
   background: rgb(231, 173, 64);
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -54,18 +54,18 @@ header {
   -ms-grid-column-gap: .5rem;
   padding: 2rem 0;
 }
-.hero > div {
+#hero > div {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-column-gap: .5rem;
   padding: .5rem .5rem 0 .6rem;
 } */
-.hero {
-  background: rgb(231, 173, 64);
+#hero {
+  background: #E7AD40;
   display: flex;
   padding: 2rem 0;
 }
-.hero > div {
+#hero > div {
   width: 50%;
   display: flex;
   padding: .5rem .5rem 0 .6rem;
@@ -137,7 +137,7 @@ nav .fa, footer .fa {
   display: inline-block;
   color: rgba(249, 249, 249, 0.8);
   font-size: 2rem;
-  padding-top: .5rem;
+  margin-top: .5rem;
  }
 main {
   color: #272727;
