@@ -39,7 +39,7 @@ h4 {
   padding: 1rem 0 .3rem 0;
 }
 p {
-  padding: .5rem;
+  padding: .5rem 0;
 }
 header {
   background: #403F3F;
@@ -146,7 +146,7 @@ main {
 }
 main section {
   border-bottom: 1px solid rgba(231, 173, 64, 0.5);
-  padding: 2rem 0;
+  padding: 2rem .5rem;
   margin-top: 1rem; 
 }
 .profile {
@@ -232,6 +232,9 @@ footer a {
 @media (max-width: 37.5rem) {
    .profile {
     flex-direction: column;
+  }
+  .projects figure {
+    margin: 1rem 0;
   }
 }
 @media (min-width: 37.5rem) {
