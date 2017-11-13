@@ -159,9 +159,10 @@ main section {
   justify-content: center;
 }
 .profile img {
-  min-width: 200px;
+  max-width: 300px;
+  width: 33%;
   height: auto;
-  border-radius: 25px;
+  border-radius: 100%;
   margin: 0 1rem;
 }
 .profile > div {
@@ -232,6 +233,9 @@ footer a {
 @media (max-width: 37.5rem) {
    .profile {
     flex-direction: column;
+  }
+  .profile img{
+    width: 80%;
   }
   .projects figure {
     margin: 1rem 0;
