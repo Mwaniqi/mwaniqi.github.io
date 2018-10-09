@@ -89,33 +89,25 @@ header {
 .eighth {
   background: #9D9D9D;
   margin-top: -.5rem;
-} a {
+}
+a {
   text-decoration: none;
 }
-header li {
-  text-transform: uppercase;
+nav {
+  text-align: right;
 }
-header a, footer a {
+.nav-link {
   color: rgba(249, 249, 249, 0.8);
-  padding: .3rem 0;
+  padding: 0.2rem 1.2rem;
 }
-header li:hover, .active, .icon:hover, footer a:hover {
+.nav-link:hover, .active, .icon:hover, footer a:hover {
   color: #588AAF;
 }
-header .fa-text, footer .fa-text {
+nav .fa-text {
   margin-left: .5rem;
   display: none;
 }
-nav ul {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-end;
-}
-nav ul a {
-  padding: 0.2rem 1.2rem;
-  align-items: left;
-}
-nav .fa, footer .fa {
+nav .fa {
   font-size: large;
 }
 .icon {
@@ -127,7 +119,7 @@ main {
   padding: 0 .2rem;
   margin: 1rem 0;
 }
-main section {
+.section {
   border-bottom: 1px solid rgba(231, 173, 64, 0.5);
   padding: 2rem .5rem;
   margin-top: 1rem; 
@@ -150,7 +142,7 @@ main section {
   width: 30%;
   height: auto;
   border-radius: 100%;
-  margin-right: .5rem;
+  margin-left: 1rem;
 }
 .profile-intro {
   flex: 1;
@@ -195,9 +187,6 @@ footer {
   color: #f9f9f9;
   padding: 1rem;
   margin-top: 1.5rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
 }
 footer a {
   padding: 0 1rem;
@@ -215,12 +204,12 @@ footer a {
     flex-wrap: wrap;
     align-items: flex-start;
   }
-  .projects figure {
-    width: calc(50% - 2rem);
+  .projects a {
+    width: 50%;
   }
 }
 @media screen and (min-width: 50rem) {
-  .projects figure {
-    width: calc(33.33% - 2rem);
+  .projects a {
+    width: 33.33%;
   }
 }
