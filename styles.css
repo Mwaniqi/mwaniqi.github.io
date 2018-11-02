@@ -1,6 +1,7 @@
 html {
   position: relative;
   min-height: 100%;
+  scroll-behavior: smooth;
 }
 body {
   max-width: 50rem;
@@ -192,11 +193,6 @@ footer a {
   padding: 0 1rem;
 }
 /* media queries */
-@media (max-width: 37.5rem) {
-  .projects figure {
-    margin: 1rem 0;
-  }
-}
 @media (min-width: 37.5rem) {
   .projects {
     display: flex;
