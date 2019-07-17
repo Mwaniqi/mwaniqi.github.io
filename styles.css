@@ -157,10 +157,10 @@ main {
 }
 .projects figure {
   margin: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.2) .1rem .2rem .05rem .009rem;
+  /* box-shadow: rgba(0, 0, 0, 0.2) .1rem .2rem .05rem .009rem; */
 }
 .projects figure:hover {
-  box-shadow: rgba(0, 0, 0, 0.4) .1rem .2rem .05rem .01rem;
+  box-shadow: rgba(0, 0, 0, 0.4) .1rem .1rem .2rem .01rem;
   transition: all .2s ease-out;
 }
 .projects img {
@@ -168,14 +168,15 @@ main {
   width: 100%;
   height: auto;
 }
-.projects figcaption {
+.projects figcaption{
+  box-sizing: border-box;
   width: 100%;
   background: rgba(64, 63, 63, 0.6);
   color: rgba(249, 249, 249, 0.9);
-  font-size: .9em;
+  font-size: .8em;
   text-align: center;
   letter-spacing: .5px;
-  padding: 2px 0;
+  padding: 2px 3px;
 }
 #tools {
   background-color: rgba(0,0,0, .65);
