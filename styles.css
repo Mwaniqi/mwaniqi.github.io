@@ -152,31 +152,61 @@ main {
   color: rgb(231, 173, 64);
   padding-bottom: .2rem;
 }
-#projects {
-  background: rgba(231, 173, 64, 1)
+#projects, .project-link {
+  background: rgba(231, 173, 64, 1);
 }
-.projects figure {
+.project {
   margin: 1rem;
-  /* box-shadow: rgba(0, 0, 0, 0.2) .1rem .2rem .05rem .009rem; */
+  position: relative;
 }
-.projects figure:hover {
+.project:hover {
   box-shadow: rgba(0, 0, 0, 0.4) .1rem .1rem .2rem .01rem;
   transition: all .2s ease-out;
 }
-.projects img {
+.project img {
   display: block;
   width: 100%;
   height: auto;
 }
-.projects figcaption{
+.project figcaption{
   box-sizing: border-box;
   width: 100%;
-  background: rgba(64, 63, 63, 0.6);
-  color: rgba(249, 249, 249, 0.9);
+  color: rgba(64, 63, 63, 0.9);
+  background-color: rgba(249, 249, 249, 0.95);
   font-size: .8em;
   text-align: center;
   letter-spacing: .5px;
+  line-height: 1.7;
   padding: 2px 3px;
+  /* transform: translate(0%, 50%); */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: all .25s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+.project:hover figcaption {
+  /* transform: translate(0, 0); */
+  opacity: 1;
+  visibility: visible;
+}
+.caption-text {
+  width: 90%;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.project-link {
+  display: inline-block;
+  color: #fff;
+  padding: 7px 16px;
+  border-radius: 2px;
+  font-weight: 700;
 }
 #tools {
   background-color: rgba(0,0,0, .65);
@@ -199,14 +229,15 @@ footer a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
     align-items: flex-start;
   }
-  .projects a {
-    width: 50%;
+  .project {
+    flex: 0 0 44%;
   }
 }
 @media screen and (min-width: 50rem) {
-  .projects a {
-    width: 33.33%;
+  .project {
+    flex: 0 0 29%;
   }
 }
