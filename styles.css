@@ -5,91 +5,96 @@ html {
 }
 body {
   max-width: 50rem;
-  box-shadow: rgba(121, 122, 122, 0.11) 0 0 3rem .7rem;
+  box-shadow: rgba(121, 122, 122, 0.11) 0 0 3rem 0.7rem;
   box-sizing: border-box;
   color: #202020;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 1rem;
   line-height: 1.875rem;
   margin: 0 auto;
 }
 h1 {
-  color:#272727;
+  color: #272727;
   font-size: 2.2rem;
-  font-family: 'Slabo 27px', serif;
+  font-family: "Slabo 27px", serif;
   font-weight: 300;
-  padding: 1em 0 .3rem 0;
+  padding: 1em 0 0.3rem 0;
 }
 h2 {
-  font-family: 'Slabo 27px', serif;
+  font-family: "Slabo 27px", serif;
   font-weight: 300;
   font-size: 1.9rem;
-  padding: 1rem 0 .3rem 0;
+  padding: 1rem 0 0.3rem 0;
   text-align: center;
   color: rgb(249, 249, 249);
-  text-shadow: rgb(28, 27, 27) 1px 0 .1em;
+  text-shadow: rgb(28, 27, 27) 1px 0 0.1em;
   text-decoration: underline;
 }
 h3 {
   font-size: 1.3rem;
-  padding: 1rem 0 .3rem 0;
+  padding: 1rem 0 0.3rem 0;
 }
 h4 {
   font-size: 1.2rem;
-  padding: 1rem 0 .3rem 0;
+  padding: 1rem 0 0.3rem 0;
+}
+#projects h5 {
+  margin-left: 1rem;
+  color: rgb(249, 249, 249);
+  text-shadow: rgb(28, 27, 27) 1px 0 0.1em;
 }
 p {
-  padding: .5rem 0;
+  padding: 0.5rem 0;
 }
 header {
-  background: #403F3F;
-  box-shadow: rgba(19, 20, 20, 0.60) 0 0 .2rem .05rem;
+  background: #403f3f;
+  box-shadow: rgba(19, 20, 20, 0.6) 0 0 0.2rem 0.05rem;
 }
 #hero {
-  background: #E7AD40;
+  background: #e7ad40;
   display: flex;
   padding: 2rem 0;
 }
 #hero > div {
   width: 50%;
   display: flex;
-  padding: .5rem .5rem 0 .6rem;
+  padding: 0.5rem 0.5rem 0 0.6rem;
 }
 .item {
-  margin: 0 2px; 
+  margin: 0 2px;
   width: 25%;
-  height: .2rem;
+  height: 0.2rem;
 }
 .first {
   background: #272727;
   margin-top: 2rem;
 }
 .second {
-  background: #9D9D9D ;
+  background: #9d9d9d;
   margin-top: 1.5rem;
 }
 .third {
-  background: #F4F6F7;
+  background: #f4f6f7;
   margin-top: 1rem;
 }
 .fourth {
-  background: #6C8598;
-  margin-top: .5rem;
+  background: #6c8598;
+  margin-top: 0.5rem;
 }
 .fifth {
-  background: #F4F6F7;
+  background: #f4f6f7;
   margin-top: 1rem;
 }
 .sixth {
-  background: #6C8598;
-  margin-top: .5rem;
+  background: #6c8598;
+  margin-top: 0.5rem;
 }
 .seventh {
   background: #272727;
 }
 .eighth {
-  background: #9D9D9D;
-  margin-top: -.5rem;
+  background: #9d9d9d;
+  margin-top: -0.5rem;
 }
 a {
   text-decoration: none;
@@ -101,11 +106,14 @@ nav {
   color: rgba(249, 249, 249, 0.8);
   padding: 0.2rem 1.2rem;
 }
-.nav-link:hover, .active, .icon:hover, footer a:hover {
-  color: #588AAF;
+.nav-link:hover,
+.active,
+.icon:hover,
+footer a:hover {
+  color: #588aaf;
 }
 nav .fa-text {
-  margin-left: .5rem;
+  margin-left: 0.5rem;
   display: none;
 }
 nav .fa {
@@ -117,16 +125,16 @@ nav .fa {
 }
 main {
   color: #272727;
-  padding: 0 .2rem;
+  padding: 0 0.2rem;
   margin: 1rem 0;
 }
 .section {
   border-bottom: 1px solid rgba(231, 173, 64, 0.5);
-  padding: 2rem .5rem;
-  margin-top: 1rem; 
+  padding: 2rem 0.5rem;
+  margin-top: 1rem;
 }
 #profile {
-  background-color: rgba(0,0,0, .65);
+  background-color: rgba(0, 0, 0, 0.65);
   color: rgba(249, 249, 249, 0.8);
   text-align: center;
 }
@@ -150,9 +158,10 @@ main {
 }
 #email {
   color: rgb(231, 173, 64);
-  padding-bottom: .2rem;
+  padding-bottom: 0.2rem;
 }
-#projects, .project-link {
+#projects,
+.project-link {
   background: rgba(231, 173, 64, 1);
 }
 .project {
@@ -160,22 +169,22 @@ main {
   position: relative;
 }
 .project:hover {
-  box-shadow: rgba(0, 0, 0, 0.4) .1rem .1rem .2rem .01rem;
-  transition: all .2s ease-out;
+  box-shadow: rgba(0, 0, 0, 0.4) 0.1rem 0.1rem 0.2rem 0.01rem;
+  transition: all 0.2s ease-out;
 }
 .project img {
   display: block;
   width: 100%;
   height: auto;
 }
-.project figcaption{
+.project figcaption {
   box-sizing: border-box;
   width: 100%;
   color: rgba(64, 63, 63, 0.9);
   background-color: rgba(249, 249, 249, 0.95);
-  font-size: .8em;
+  font-size: 0.8em;
   text-align: center;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   line-height: 1.7;
   padding: 2px 3px;
   /* transform: translate(0%, 50%); */
@@ -184,7 +193,7 @@ main {
   bottom: 0;
   left: 0;
   right: 0;
-  transition: all .25s ease;
+  transition: all 0.25s ease;
   opacity: 0;
   visibility: hidden;
 }
@@ -209,13 +218,13 @@ main {
   font-weight: 700;
 }
 #tools {
-  background-color: rgba(0,0,0, .65);
+  background-color: rgba(0, 0, 0, 0.65);
   color: rgba(249, 249, 249, 0.8);
   text-align: center;
 }
 footer {
   background: rgba(25, 27, 27, 0.85);
-  border-top: 1px solid #0F1111;
+  border-top: 1px solid #0f1111;
   color: #f9f9f9;
   padding: 1rem;
   margin-top: 1.5rem;
